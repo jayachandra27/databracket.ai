@@ -2,4 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer base {
+  body {
+    @apply bg-gradient-to-r from-orange-300 to-yellow-400;
+  }
+}
