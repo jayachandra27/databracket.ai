@@ -13,16 +13,19 @@ export default function Header() {
             <a href="https://www.youtube.com/channel/UC1otT3oYubDHeGsjix9LVCA?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
             <div className="flex justify-center items-center h-20">
                 <FontAwesomeIcon icon={faYoutube} className="text-red-600 h-6 pr-4" />
+                <h4>Youtube</h4>
             </div>
             </a>
             <a href="https://databracket.substack.com/" target="_blank" rel="noopener noreferrer">
             <div className="flex justify-center items-center h-20">
                 <FontAwesomeIcon icon={faEnvelope} className="text-black-50 h-6 pr-4" />
+                <h4>Substack</h4>
             </div>
             </a>
             <a href="https://www.instagram.com/databracket/" target="_blank" rel="noopener noreferrer">
                 <div className="flex justify-center items-center h-20">
                 <FontAwesomeIcon icon={faInstagram} className="text-orange-500 h-6 pr-4" />
+                <h4>Instagram</h4>
                 </div>
             </a>
             </div>
