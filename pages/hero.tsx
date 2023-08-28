@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react';
-import RedirectButton from './formRedirect';
 import imgFile from '../assets/databracket_service_offerings_illustrations.png'
 import ContactUs from './contactUs';
 
@@ -17,7 +16,7 @@ export default function Hero() {
         </div>
         <div className='flex justify-center items-center pb-3'>
         <h3 className="text-center text-lg">
-            Databracket is committed at furnishing individuals with the knowledge, resources, and strategies needed to  <br />
+            Databracket is committed at furnishing teams/individuals with the knowledge, resources, and strategies needed to  <br />
             excel at leveraging the potential of <b>Data Engineering, DevOps and MLOps</b><br />
             to transform innovative <b>AI</b> concepts/ideas into commercial products/services.
         </h3>
