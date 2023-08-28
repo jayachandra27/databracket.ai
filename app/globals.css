@@ -2,8 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   body {
     @apply bg-gradient-to-r from-orange-300 to-yellow-400;
   }
+} */
+
+.bg-popular-primary {
+  background-color: #fff;
+}
+
+.bg-popular-secondary {
+  background-color: #0e1011;
+}
+
+.bg-ternary-color {
+  background-color: #e6dc85;
+}
+
+.text-popular-light {
+  color: #000;
 }
