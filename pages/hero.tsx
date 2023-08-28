@@ -5,7 +5,7 @@ import ContactUs from './contactUs';
 
 export default function Hero() {
     return (
-        <div className='bg-ternary-color'>
+        <div className='bg-ternary-color shadow-lg shadow-zinc-300'>
         <br />
         <div>
             <h1 className="text-6xl font-bold text-gray-800 ">Databracket.ai</h1>
@@ -16,9 +16,9 @@ export default function Hero() {
         </div>
         <div className='flex justify-center items-center pb-3'>
         <h3 className="text-center text-lg">
-            Databracket is committed at furnishing teams/individuals with the knowledge, resources, and strategies needed to  <br />
+            Databracket is committed at furnishing teams/individuals with the knowledge, resources, and strategies to  <br />
             excel at leveraging the potential of <b>Data Engineering, DevOps and MLOps</b><br />
-            to transform innovative <b>AI</b> concepts/ideas into commercial products/services.
+            and transform innovative <b>AI</b> concepts/ideas into commercial products/services.
         </h3>
         </div>
         <ContactUs/>

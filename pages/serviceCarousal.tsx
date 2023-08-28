@@ -39,12 +39,12 @@ const SlidingWindowCarousel = () => {
 
   return (
     <div>
-      <h2 className="text-4xl mt-4 underline underline-offset-2"><b>Supported Technologies</b></h2>
-      <h3 className="text-xl italic ">We specialize in offering thoughtfully curated courses, tutorials and services to tailor current market needs to enhancing the levels of individual/team confidence levels for <br />
-         successive and  progressive development, seamless integration, and efficient deployment of AI services. <br />
-      </h3>
+      <h2 className="text-4xl mt-8 underline underline-offset-2"><b>Supported Technologies</b></h2>
       <br />
-      <p className="text-xl italic">Our focus areas encompass self-development, career growth, and entrepreneurial achievement</p>
+      <h3 className="text-xl ">We specialize in offering thoughtfully curated courses, tutorials and services to tailor current market needs, <br />
+        enhancing the confidence levels of individuals/teams for <br />
+        successive and  progressive development, seamless integration, and efficient deployment of AI services. <br />
+      </h3>
       <br />
       <br />
       <div className="slider">
