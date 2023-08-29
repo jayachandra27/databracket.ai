@@ -11,17 +11,18 @@ import snowflake from '../assets/snowflake_cloud_data_warehouse_offering.png';
 import aws from '../assets/aws_offering.png';
 import docker from '../assets/docker_offering.png';
 import dbt from '../assets/dbt_offering.png';
-
+import rust from '../assets/rust_offering.png'
 const images = [
-  { src: docker, alt: 'Docker Logo', text: 'Docker End-to-End Support' },
-  { src: mlflow, alt: 'MLFlow Logo', text: 'End-to-End MLOps ' },
-  { src: snowflake, alt: 'Snowflake Logo', text: 'Snowflake Data Engineering and Automation' },
-  { src: python, alt: 'python Logo', text: 'Python Development and Automation' },
+  { src: docker, alt: 'Docker Logo', text: 'End-to-End Support' },
+  { src: mlflow, alt: 'MLFlow Logo', text: 'End-to-End MLOps' },
+  { src: snowflake, alt: 'Snowflake Logo', text: 'Data Engineering and Automation' },
+  { src: python, alt: 'python Logo', text: 'Development and Automation' },
   { src: dbr, alt: 'Databricks Logo', text: 'Data Engineering & Machine Learning' },
-  { src: aws, alt: 'AWS Logo', text: 'AWS Development and Support' },
-  { src: airflow, alt: 'Airflow Logo', text: 'Airflow Automation' },
-  { src: azure, alt: 'Azure Logo', text: 'Azure Development and Support' },
-  { src: dbt, alt: 'getdbt Logo', text: 'ELT with getdbt  ' },
+  { src: aws, alt: 'AWS Logo', text: 'Development and Support' },
+  { src: airflow, alt: 'Airflow Logo', text: 'Automation' },
+  { src: azure, alt: 'Azure Logo', text: 'Development and Support' },
+  { src: dbt, alt: 'getdbt Logo', text: 'ETL&ELT' },
+  // { src: rust, alt: 'Rust Logo', text: 'RUST WASM and Development' },
 ];
 
 const SlidingWindowCarousel = () => {
