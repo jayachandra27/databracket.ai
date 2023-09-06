@@ -12,6 +12,7 @@ import aws from '../assets/aws_offering.png';
 import docker from '../assets/docker_offering.png';
 import dbt from '../assets/dbt_offering.png';
 import rust from '../assets/rust_offering.png'
+
 const images = [
   { src: docker, alt: 'Docker Logo', text: 'End-to-End Support' },
   { src: mlflow, alt: 'MLFlow Logo', text: 'End-to-End MLOps' },
@@ -40,25 +41,27 @@ const SlidingWindowCarousel = () => {
 
   return (
     <div>
-      <h2 className="text-4xl mt-8 underline underline-offset-2"><b>Supported Technologies</b></h2>
+      <h2 className="text-2xl md:text-4xl mt-4 md:mt-8 underline underline-offset-2">
+        <b>Supported Technologies</b>
+      </h2>
       <br />
-      <h3 className="text-xl ">We specialize in offering thoughtfully curated courses, tutorials and services to tailor current market needs, <br />
+      <h3 className="text-base md:text-xl lg:text-2xl">
+        We specialize in offering thoughtfully curated courses, tutorials, and services to tailor current market needs,{' '}
         enhancing the confidence levels of individuals/teams for <br />
-        successive and  progressive development, seamless integration, and efficient deployment of AI services. <br />
+        successive and progressive development, seamless integration, and efficient deployment of AI services. <br />
       </h3>
       <br />
       <br />
       <div className="slider">
-        <div className="slide-track flex items-center">
+        <div className="slide-track flex items-center overflow-x-scroll md:overflow-x-auto">
           {images.map((image, index) => (
-            <div className={`slide ${index === activeIndex ? 'active' : ''}`} key={index}>
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={180}
-                height={100}
-                className={index !== 0 ? 'ml-6 mb-6' : ''}
-              />
+            <div
+              className={`slide ${index === activeIndex ? 'active' : ''} ${
+                index !== 0 ? 'ml-4 md:ml-6 mb-4 md:mb-6' : ''
+              }`}
+              key={index}
+            >
+              <Image src={image.src} alt={image.alt} width={180} height={100} />
               <p>{image.text}</p>
             </div>
           ))}
