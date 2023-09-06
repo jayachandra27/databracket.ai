@@ -62,7 +62,7 @@ const SlidingWindowCarousel = () => {
               key={index}
             >
               <Image src={image.src} alt={image.alt} width={180} height={100} />
-              <p>{image.text}</p>
+              {/* <p>{image.text}</p> */}
             </div>
           ))}
         </div>
