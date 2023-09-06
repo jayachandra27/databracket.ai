@@ -1,4 +1,6 @@
 'use client'
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react';
 import { useState, useEffect } from 'react'; // Import the useEffect and useState hooks
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -30,11 +32,11 @@ export default function Header() {
     };
 
     return (
-        <header className={`py-4 md:py-6 lg:py-8 px-4 md:px-6 lg:px-8 flex justify-between items-center`}>
+        <header className={`px-4 md:px-6 lg:px-8 flex justify-between items-center`}>
             <div className="flex items-center space-x-4">
-                <a href="/">
+                <Link href="/">
                 <img src="icon.png" alt="Logo" className="w-16 h-16 mr-2" />
-                </a>
+                </Link>
             </div>
 
             <div className="md:hidden">
@@ -65,38 +67,38 @@ export default function Header() {
             </div>
 
             <div className={`md:flex md:space-x-4 ${isSmallScreen ? 'hidden' : 'mt-4'}`}>
-                <button className="bg-yellow-400 hover:bg-white text-black hover:text-white px-4 py-2 rounded-full">
-                    <a href="/data_engineering">Data Engineering</a>
+                <button className="bg-white hover:bg-yellow-400 text-black hover:text-black px-4 py-2 rounded-full">
+                    <Link href="/data_engineering">Data Engineering</Link>
                 </button>
-                <button className="bg-yellow-400 hover:bg-white text-black hover:text-white px-4 py-2 rounded-full">
-                    <a href="/devops">DevOps</a>
+                <button className="bg-white hover:bg-yellow-400 text-black hover:text-black px-4 py-2 rounded-full">
+                    <Link href="/devops">DevOps</Link>
                 </button>
-                <button className="bg-yellow-400 hover:bg-white text-black hover:text-white px-4 py-2 rounded-full">
-                    <a href="/mlops">MLOps</a>
+                <button className="bg-white hover:bg-yellow-400 text-black hover:text-black px-4 py-2 rounded-full">
+                    <Link href="/mlops">MLOps</Link>
                 </button>
             </div>
             <div className={`md:flex md:space-x-4 ${isSmallScreen ? 'hidden' : 'mt-4'}`}>
-                <a href="https://www.youtube.com/channel/UC1otT3oYubDHeGsjix9LVCA?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.youtube.com/channel/UC1otT3oYubDHeGsjix9LVCA?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faYoutube} className="text-red-600 h-6 md:h-8 lg:h-10" />
-                </a>
-                <a href="https://databracket.substack.com/" target="_blank" rel="noopener noreferrer">
+                </Link>
+                <Link href="https://databracket.substack.com/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faEnvelope} className="text-black-50 h-6 md:h-8 lg:h-10" />
-                </a>
-                <a href="https://www.instagram.com/databracket/" target="_blank" rel="noopener noreferrer">
+                </Link>
+                <Link href="https://www.instagram.com/databracket/" target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faInstagram} className="text-orange-500 h-6 md:h-8 lg:h-10" />
-                </a>
+                </Link>
             </div>
 
             {isSmallScreen || isMenuOpen ? (
                 <div className={`mt-4 md:mt-0 ${isMenuOpen ? 'block' : 'hidden'} md:flex md:space-x-4`}>
                 <button className="bg-yellow-400 hover:bg-white text-black hover:text-white px-4 py-2 rounded-full">
-                    <a href="/data_engineering">Data Engineering</a>
+                    <Link href="/data_engineering">Data Engineering</Link>
                 </button>
                 <button className="bg-yellow-400 hover:bg-white text-black hover:text-white px-4 py-2 rounded-full">
-                    <a href="/devops">DevOps</a>
+                    <Link href="/devops">DevOps</Link>
                 </button>
                 <button className="bg-yellow-400 hover:bg-white text-black hover:text-white px-4 py-2 rounded-full">
-                    <a href="/mlmlops">ML/MLOps</a>
+                    <Link href="/mlmlops">ML/MLOps</Link>
                 </button>
                 </div>
             ) : null}

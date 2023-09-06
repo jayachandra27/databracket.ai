@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -12,16 +13,16 @@ const Footer = () => {
           <p className="mt-2 text-sm md:text-base">Elevating success through AI innovation.</p>
         </div>
         <div className="md:flex md:space-x-6">
-          <a href="#" className="text-sm md:text-base hover:text-gray-300">
+          <Link href="#" className="text-sm md:text-base hover:text-gray-300">
             Terms of Service
-          </a>
+          </Link>
           &nbsp;
-          <a href="#" className="text-sm md:text-base hover:text-gray-300">
+          <Link href="#" className="text-sm md:text-base hover:text-gray-300">
             Privacy Policy
-          </a>
+          </Link>
         </div>
         <div className="flex space-x-4 items-center">
-          <a
+          <Link
             href="https://www.youtube.com/channel/UC1otT3oYubDHeGsjix9LVCA?sub_confirmation=1"
             target="_blank"
             rel="noopener noreferrer"
@@ -29,8 +30,8 @@ const Footer = () => {
             <div className="flex justify-center items-center h-10 md:h-20">
               <FontAwesomeIcon icon={faYoutube} className="text-red-600 h-4 md:h-6 pr-2 md:pr-4" />
             </div>
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://databracket.substack.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -38,8 +39,8 @@ const Footer = () => {
             <div className="flex justify-center items-center h-10 md:h-20">
               <FontAwesomeIcon icon={faEnvelope} className="text-black-50 h-4 md:h-6 pr-2 md:pr-4" />
             </div>
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.instagram.com/databracket/"
             target="_blank"
             rel="noopener noreferrer"
@@ -47,7 +48,7 @@ const Footer = () => {
             <div className="flex justify-center items-center h-10 md:h-20">
               <FontAwesomeIcon icon={faInstagram} className="text-orange-500 h-4 md:h-6 pr-2 md:pr-4" />
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
