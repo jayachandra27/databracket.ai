@@ -68,13 +68,13 @@ export default function Header() {
 
             <div className={`md:flex md:space-x-4 ${isSmallScreen ? 'hidden' : 'mt-4'}`}>
                 <button className="bg-white hover:bg-yellow-400 text-black hover:text-black px-4 py-2 rounded-full">
-                    <Link href="/data_engineering">Data Engineering</Link>
+                    <Link href="/courses">Courses</Link>
                 </button>
                 <button className="bg-white hover:bg-yellow-400 text-black hover:text-black px-4 py-2 rounded-full">
-                    <Link href="/devops">DevOps</Link>
+                    <Link href="/devops">Podcasts</Link>
                 </button>
                 <button className="bg-white hover:bg-yellow-400 text-black hover:text-black px-4 py-2 rounded-full">
-                    <Link href="/mlops">MLOps</Link>
+                    <Link href="/mlops">Projects</Link>
                 </button>
             </div>
             <div className={`md:flex md:space-x-4 ${isSmallScreen ? 'hidden' : 'mt-4'}`}>
